@@ -33,11 +33,11 @@ Type-safe DOM event constants including:
 Comprehensive keyboard key constants:
 
 - All letter keys: `A` through `Z`
-- Digit keys: `Digit0` through `Digit9`
+- Digit keys: `DIGIT_0` through `DIGIT_9`
 - Function keys: `F1` through `F12`
-- Navigation keys: `ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`
-- Special keys: `Enter`, `Escape`, `Tab`, `Backspace`, etc.
-- Modifier keys: `Shift`, `Control`, `Alt`
+- Navigation keys: `ARROW_UP`, `ARROW_DOWN`, `ARROW_LEFT`, `ARROW_RIGHT`
+- Special keys: `ENTER`, `ESCAPE`, `TAB`, `BACKSPACE`, etc.
+- Modifier keys: `SHIFT`, `CONTROL`, `ALT`
 - And more...
 
 ## License
