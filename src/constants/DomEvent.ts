@@ -1,3 +1,6 @@
+/**
+ * DOM event type strings for `addEventListener`.
+ */
 export const DomEvent = {
     // Mouse Events
     CLICK: 'click',
@@ -9,7 +12,7 @@ export const DomEvent = {
     MOUSE_LEAVE: 'mouseleave',
     MOUSE_OVER: 'mouseover',
     MOUSE_OUT: 'mouseout',
-    MOUSE_WHEEL: 'wheel',
+    WHEEL: 'wheel',
     CONTEXT_MENU: 'contextmenu',
 
     // Pointer Events
@@ -31,8 +34,6 @@ export const DomEvent = {
     // Keyboard Events
     KEY_DOWN: 'keydown',
     KEY_UP: 'keyup',
-    /** @deprecated Legacy in UI Events — use KEY_DOWN with `KeyboardEvent.key` instead. */
-    KEY_PRESS: 'keypress',
 
     // Focus Events
     FOCUS: 'focus',
@@ -56,8 +57,6 @@ export const DomEvent = {
     // Window Events
     ERROR: 'error',
     LOAD: 'load',
-    /** @deprecated Unreliable and disables back/forward-cache — use PAGE_HIDE or VISIBILITY_CHANGE instead. */
-    UNLOAD: 'unload',
     BEFORE_UNLOAD: 'beforeunload',
     PAGE_HIDE: 'pagehide',
     PAGE_SHOW: 'pageshow',

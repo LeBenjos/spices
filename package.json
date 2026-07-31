@@ -1,6 +1,6 @@
 {
   "name": "@benjos/spices",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Collection of TypeScript common constant files for personal projects",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,7 +8,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
   "files": [
@@ -17,7 +18,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "prepack": "npm run build"
   },
   "repository": {

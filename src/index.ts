@@ -1,2 +1,3 @@
-export { DomEvent, type DomEvent as DomEventType } from './constants/DomEvent.js';
-export { KeyboardConstant, type KeyboardConstant as KeyboardConstantType } from './constants/KeyboardConstant.js';
+export { DomEvent } from './constants/DomEvent.js';
+export { KeyboardKey } from './constants/KeyboardKey.js';
+export { KeyboardCode } from './constants/KeyboardCode.js';
