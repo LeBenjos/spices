@@ -7,6 +7,8 @@ export const DomEvent = {
     MOUSE_MOVE: 'mousemove',
     MOUSE_ENTER: 'mouseenter',
     MOUSE_LEAVE: 'mouseleave',
+    MOUSE_OVER: 'mouseover',
+    MOUSE_OUT: 'mouseout',
     MOUSE_WHEEL: 'wheel',
     CONTEXT_MENU: 'contextmenu',
 
@@ -16,6 +18,8 @@ export const DomEvent = {
     POINTER_UP: 'pointerup',
     POINTER_ENTER: 'pointerenter',
     POINTER_LEAVE: 'pointerleave',
+    POINTER_OVER: 'pointerover',
+    POINTER_OUT: 'pointerout',
     POINTER_CANCEL: 'pointercancel',
 
     // Touch Events
@@ -27,6 +31,7 @@ export const DomEvent = {
     // Keyboard Events
     KEY_DOWN: 'keydown',
     KEY_UP: 'keyup',
+    /** @deprecated Legacy in UI Events — use KEY_DOWN with `KeyboardEvent.key` instead. */
     KEY_PRESS: 'keypress',
 
     // Focus Events
@@ -45,14 +50,17 @@ export const DomEvent = {
     FULLSCREEN_CHANGE: 'fullscreenchange',
     FULLSCREEN_ERROR: 'fullscreenerror',
     VISIBILITY_CHANGE: 'visibilitychange',
-
-    // Window Events
     DOM_CONTENT_LOADED: 'DOMContentLoaded',
     READY_STATE_CHANGE: 'readystatechange',
+
+    // Window Events
     ERROR: 'error',
     LOAD: 'load',
+    /** @deprecated Unreliable and disables back/forward-cache — use PAGE_HIDE or VISIBILITY_CHANGE instead. */
     UNLOAD: 'unload',
     BEFORE_UNLOAD: 'beforeunload',
+    PAGE_HIDE: 'pagehide',
+    PAGE_SHOW: 'pageshow',
     RESIZE: 'resize',
     SCROLL: 'scroll',
 
@@ -81,6 +89,7 @@ export const DomEvent = {
     ANIMATION_START: 'animationstart',
     ANIMATION_END: 'animationend',
     ANIMATION_ITERATION: 'animationiteration',
+    ANIMATION_CANCEL: 'animationcancel',
 
     // Transition Events
     TRANSITION_START: 'transitionstart',
