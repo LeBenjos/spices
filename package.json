@@ -1,6 +1,6 @@
 {
   "name": "@benjos/spices",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Collection of TypeScript common constant files for personal projects",
   "type": "module",
   "main": "./dist/index.js",
