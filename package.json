@@ -19,7 +19,14 @@
   "sideEffects": false,
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "prepack": "npm run build"
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm run build",
+    "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:major": "npm version major",
+    "preversion": "npm run typecheck && (npm whoami || npm login)",
+    "postversion": "git push --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
