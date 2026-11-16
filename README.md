@@ -60,6 +60,17 @@ Values of `KeyboardEvent.code` — physical key positions, layout-independent:
 `KEY_A`–`KEY_Z`, `DIGIT_0`–`DIGIT_9`, `NUMPAD_0`–`NUMPAD_9` and numpad operators,
 left/right modifier variants (`SHIFT_LEFT`, `META_RIGHT`, ...), `F1`–`F12`, punctuation.
 
+### AnimationPlayState
+
+Values of `Animation.playState` (Web Animations, CSS animations and transitions included):
+`IDLE`, `RUNNING`, `PAUSED`, `FINISHED`.
+
+```ts
+for (const animation of document.getAnimations()) {
+    if (animation.playState === AnimationPlayState.RUNNING) animation.pause();
+}
+```
+
 ## Migrating from 1.x
 
 | 1.x | 2.0 |
